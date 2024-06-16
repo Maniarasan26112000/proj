@@ -1,0 +1,427 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header
+{
+	display: flex;
+	padding: 0px 20px 30px;
+	grid-column-gap: 1rem;
+
+	
+}
+header div
+{
+	border: none;
+	padding: 10px;
+	color: white;
+	background-color: #5D666c;
+	border-radius: 5px;
+
+}
+section
+{ 
+	display: flex;
+	justify-content: center;
+	background-color: green;
+	background-color: #4F564b;
+}
+ .word
+{
+	position: absolute;
+	display: flex;
+	opacity: 0;
+	margin-top: -2%;
+
+}
+
+  .word .letter
+{
+	transform-origin: center center 25px;
+}
+
+  .word .letter.out
+{
+	transform: rotateX(90deg);
+	transition: 0.32s cubic-bezier(0.6,0,0.7,0.2);
+
+}
+
+  .word .letter.in 
+{
+	transition: 0.38s ease;
+}
+  .word .letter.behind
+{
+	transform: rotateX(-90deg);
+}
+
+
+#i
+{
+	display: none;
+}
+.web
+{
+	display: flex;
+	background-color: #5D666c;
+	grid-column-gap:34rem;
+	
+}
+	.web-left
+	{
+		
+		padding: 30px;
+	}
+.web-left h1,p
+{
+	color: white;
+}
+.web-left h1
+{
+	color: yellow;
+	/*margin-top: 5%;*/
+}
+.web-left p
+{
+	margin-top: 10%;
+}
+
+.split
+{	
+	display: flex;
+	background-color: #4F564b;
+	justify-content: space-between;
+	padding: 10px;
+
+
+}
+.split .div
+{
+	border: none;
+	background-color: #5D666c;
+	width: 10rem;
+}
+.btn
+{
+	border: none;
+	background-color: #5D666c;
+	padding: 5px;
+	color: white;
+	font-size: 0.7rem;
+}
+
+
+.web-right p
+{
+	margin-top: 1rem;
+}
+.bgrnd
+{ 	
+
+	height: 30rem;
+	width: 80%;	
+	border: 10px solid #5D666c;
+	background-image: url(m5.jpg);
+	background-size: 100% 100%;
+	margin-top: 3rem;
+}
+.page3
+{
+	background-color: #e0e0e0;
+	border: 1px solid;
+	height: 20rem;
+	/*padding: 100px;*/
+}
+.page4
+{	
+	border: 10px solid #5D666c;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.page5
+{
+	/*display: flex;
+	justify-content: center;*/
+}
+.flex
+{
+
+}
+.point img
+{	
+	
+	width: 70%;
+	height: 160px;
+
+}
+.point
+{
+	display: flex;
+	grid-column-gap: 3rem;
+	margin-top: 14rem;
+	
+
+}
+.point div
+{
+	display: flex;
+	/*border: 1px solid;*/
+	height: 10.1rem;
+	background-color: #5D666c;
+}
+
+.point h1
+{
+	padding: 10px;
+	color: white;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+.point h1:hover
+{
+	color: limegreen;
+	transition: 1s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*page4 -------------------------------------------------------------*/
+
+@media (max-width: 882px)
+{
+	.point
+	{
+		display: flex;
+		flex-direction: column;
+		grid-row-gap: 2rem;
+		/*border: 1px solid;*/
+		width: 43rem;
+	}
+		.point img
+{	
+	
+	width: 50%;
+	height: 10rem;
+}
+		.point h1
+		{
+			padding-left: 15%;
+		}
+}
+
+
+}
+
+
+
+@media (max-width: 980px)
+{
+	.point img
+{	
+	
+	width: 5rem;
+	height: 10rem;
+}
+
+}
+
+
+
+@media (max-width: 1079px)
+{
+	header
+{
+	display: flex;
+	padding: 0px 0px 10px;
+	grid-column-gap: 0.5rem;
+}
+	#i
+{
+	display: none;
+}
+
+
+@media (max-width: 983px)
+{
+	#i
+{
+	display:inline-block;
+	position: relative;
+	left: 46%;
+	font-size: 200%;
+	color: white;
+}
+	header div
+	{
+		display: none;
+	}
+}
+}
+@media (max-width: 517px)
+{
+
+	#i
+{
+	display:inline-block;
+	position: relative;
+	left: 36%;
+	font-size: 200%;
+	color: white;
+}
+}
+
+@media (max-width: 1100px)
+{
+	.web
+{
+	display: flex;
+	background-color: #5D666c;
+	grid-column-gap:25rem;
+	
+	
+}
+@media (max-width: 988px)
+{
+	.web
+{
+	display: flex;
+	background-color: #5D666c;
+	grid-column-gap:18rem;
+	
+	
+}
+
+@media (max-width: 875px)
+{
+	.web
+{
+	display: flex;
+	background-color: #5D666c;
+	grid-column-gap:7rem;
+}
+
+@media (max-width: 699px)
+{
+	.web
+{
+	display: flex;
+	background-color: #5D666c;
+	grid-column-gap:5rem;
+}
+@media (max-width: 669px)
+{
+	.web
+{
+	display: block;
+	background-color: #5D666c;
+	grid-column-gap:5rem;
+}
+	.web-left
+	{
+		
+		padding: 30px;
+		text-align: center;
+	}
+	.web-right
+	{
+		text-align: center;
+		padding: 30px;
+	}
+	.point
+	{
+		flex-direction: column;
+	}
+}
+@media (max-width: 623px)
+{
+		.point
+		{
+			width: 65%;
+		}
+		.point h1
+		{
+			width: 20%;
+		}
+		.point h1
+		{
+			padding-left: 5%;
+			font-size: 1.3rem;
+		}
+		
+}
+@media (max-width: 541px)
+{
+	.point h1
+		{
+			padding-left: 5%;
+			font-size: 1.2rem;
+		}
+}
+@media (max-width: 499px)
+{
+		.point h1
+		{
+			padding-left: 5%;
+			font-size: 1rem;
+		}
+}	
+}
+@media (max-width: 419px)
+{
+		.point
+		{
+			width: 65%;
+		}
+		.point h1
+		{
+			width: 60%;
+			font-size: 90%;
+		}
+
+
+}
+@media (max-width: 323px)
+{
+	.point h1
+		{
+			width: 60%;
+			font-size: 80%;
+		}
+
+}
